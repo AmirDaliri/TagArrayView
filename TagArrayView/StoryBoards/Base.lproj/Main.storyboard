@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wuc-4Q-zS5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hLO-MD-Ajl">
+            <objects>
+                <viewController id="wuc-4Q-zS5" customClass="ViewController" customModule="TagArrayView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ead-hB-EVG"/>
+                        <viewControllerLayoutGuide type="bottom" id="fP0-rK-Qds"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="80Y-nD-KJj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4k-6M-rqG" customClass="TagListView" customModule="TagListViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="122" width="297" height="82"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="5zj-QW-SYO"/>
+                                    <constraint firstAttribute="width" constant="277" id="a6l-T6-aj0"/>
+                                    <constraint firstAttribute="height" priority="250" constant="82" id="pTQ-Q0-4qX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" red="0.34403669720000002" green="0.55810397550000002" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableRemoveButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="removeButtonIconSize">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="removeIconLineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="removeIconLineColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.6028202399" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBorderColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBorderColor">
+                                        <color key="value" red="0.99215686270000003" green="0.73563590570000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                        <color key="value" red="0.97199046609999995" green="0.1380294561" blue="0.1729662418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="a6l-T6-aj0"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jr-cO-hfn" customClass="TagListView" customModule="TagListViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="216" width="277" height="82"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="277" id="7dT-sm-5eh"/>
+                                    <constraint firstAttribute="height" priority="250" constant="82" id="JKr-Bf-9UK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="82" id="djb-bl-ShN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="277" id="paq-MA-QVI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" red="0.97254901959999995" green="0.46666666670000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.97199046609999995" green="0.1380294561" blue="0.1729662418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                        <color key="value" red="0.97254901959999995" green="0.60703363909999997" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableRemoveButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagHighlightedBackgroundColor">
+                                        <color key="value" red="0.97199046609999995" green="0.1380294561" blue="0.1729662418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="paq-MA-QVI"/>
+                                        <exclude reference="djb-bl-ShN"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvF-oS-awO" customClass="TagListView" customModule="TagListViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="313" width="277" height="82"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="277" id="ECS-Fr-69c"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="82" id="FJr-L6-9Nb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="277" id="IBZ-hQ-rDe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="TnS-yD-dpI"/>
+                                    <constraint firstAttribute="width" constant="277" id="ZVv-Zd-Fpf"/>
+                                    <constraint firstAttribute="height" priority="250" constant="82" id="dz4-2x-p7v"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" red="0.20000000000000001" green="0.86666666670000003" blue="0.015686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                        <color key="value" red="0.20000000000000001" green="0.86666666670000003" blue="0.015686274510000001" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ECS-Fr-69c"/>
+                                        <exclude reference="IBZ-hQ-rDe"/>
+                                        <exclude reference="TnS-yD-dpI"/>
+                                        <exclude reference="FJr-L6-9Nb"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0jr-cO-hfn" firstAttribute="leading" secondItem="80Y-nD-KJj" secondAttribute="leadingMargin" id="XH4-Vp-nlr"/>
+                            <constraint firstItem="hvF-oS-awO" firstAttribute="leading" secondItem="80Y-nD-KJj" secondAttribute="leadingMargin" id="f3V-MH-DzD"/>
+                            <constraint firstItem="q4k-6M-rqG" firstAttribute="top" secondItem="ead-hB-EVG" secondAttribute="bottom" constant="102" id="pqs-F8-WN5"/>
+                            <constraint firstItem="0jr-cO-hfn" firstAttribute="top" secondItem="q4k-6M-rqG" secondAttribute="bottom" constant="12" id="q2a-4z-hhF"/>
+                            <constraint firstItem="hvF-oS-awO" firstAttribute="top" secondItem="0jr-cO-hfn" secondAttribute="bottom" constant="15" id="sJB-Qf-dJj"/>
+                            <constraint firstItem="q4k-6M-rqG" firstAttribute="leading" secondItem="80Y-nD-KJj" secondAttribute="leadingMargin" id="sbg-pp-RqA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zAR-wr-EOJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="biggerTagListView" destination="0jr-cO-hfn" id="CDP-PV-pT9"/>
+                        <outlet property="biggestTagListView" destination="hvF-oS-awO" id="Sy8-ja-R5M"/>
+                        <outlet property="tagListView" destination="q4k-6M-rqG" id="sS6-6I-LWD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETJ-K4-93X" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="467"/>
+        </scene>
+    </scenes>
+</document>
